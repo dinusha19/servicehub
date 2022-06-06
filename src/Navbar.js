@@ -11,6 +11,7 @@ return(
         <Nav.Link href="#features">Services</Nav.Link>
         <Nav.Link href="#features">Help</Nav.Link>
         <Nav.Link href="/postRequirement">Post your requirenments</Nav.Link>
+        <Nav.Link href="/getPostRequirements">Post deatils</Nav.Link>
         </Nav>
         </Container>
         </Navbar>

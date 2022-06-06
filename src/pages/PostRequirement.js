@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Input from '../controls/Input'
 import TextArea from '../controls/TextArea'
+import {Form,FormControl,Button, Stack} from 'react-bootstrap'
 
 const PostRequirement = () => {
 
@@ -94,11 +95,10 @@ const PostRequirement = () => {
 
 
     return (
-        <div
-        >
+        <div>
 
-            <form onSubmit={handleSubmit} autoComplete="off">
-                
+            <Form onSubmit={handleSubmit} autoComplete="off" className="mx-auto p-5 border border-primary" 
+            style={{ width: '30rem' }}>
             <Input
                     id="category"
                     value={input.category}
@@ -137,10 +137,9 @@ const PostRequirement = () => {
                     placeholder="Enter requirementDetails"
                     errors={errors.requirementDetails}
                 />
-            
-                <button type="submit" class="btn btn-primary" style={{ margin: '30px' }}>Submit</button>
-
-            </form>
+                
+                <Button variant="primary" type="submit">Submit</Button>
+            </Form>
 
 
         </div>
