@@ -1,18 +1,21 @@
-import React, { useState, useEffect } from "react";
-import {Navbar,Container,Nav} from 'react-bootstrap'
+import React from "react";
+import {Navbar,Container,Nav,Button,Stack} from 'react-bootstrap'
 
 const Navbaritem = () => {
 return(
     <>
         <Navbar  bg="light" expand="lg" variant="light">
-        <Container>
-        <Navbar.Brand >Service-Hub</Navbar.Brand>
-        <Nav className="me-auto" >
-        <Nav.Link href="#features">Services</Nav.Link>
-        <Nav.Link href="#features">Help</Nav.Link>
-        <Nav.Link href="/postRequirement">Post your requirenments</Nav.Link>
-        <Nav.Link href="/getPostRequirements">Post deatils</Nav.Link>
+        <Container >
+        <Stack direction="horizontal" gap={5}>
+        <Navbar.Brand className="mx-auto" >ServiceHub</Navbar.Brand>
+        <Nav className="me-auto">
+        <Stack direction="horizontal" gap={3}>
+        <Button variant="primary" href="/serviceProviders">Service Providers</Button>{' '}
+        <Button variant="primary" href="/postRequirement" >Post your requirenments</Button>{' '}
+        <Button variant="primary" href="/getPostRequirements" >Post deatils</Button>{' '}
+        </Stack>
         </Nav>
+        </Stack>
         </Container>
         </Navbar>
     </>

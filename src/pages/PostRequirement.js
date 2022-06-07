@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import axios from "axios";
 import Input from '../controls/Input'
 import TextArea from '../controls/TextArea'
-import {Form,FormControl,Button, Stack} from 'react-bootstrap'
+import {Form,Navbar,Nav,Container,Button, Stack} from 'react-bootstrap'
 
 const PostRequirement = () => {
 
@@ -96,8 +96,20 @@ const PostRequirement = () => {
 
     return (
         <div>
+        <Navbar  bg="light" expand="lg" variant="light">
+        <Container >
+        <Stack direction="horizontal" gap={5}>
+        <Navbar.Brand className="mx-auto" >ServiceHub</Navbar.Brand>
+        <Nav className="me-auto">
+        <Stack direction="horizontal" gap={3}>
+        <Button variant="primary" href="/" >Home</Button>{' '}
+        </Stack>
+        </Nav>
+        </Stack>
+        </Container>
+        </Navbar>
 
-            <Form onSubmit={handleSubmit} autoComplete="off" className="mx-auto p-5 border border-primary" 
+            <Form onSubmit={handleSubmit} autoComplete="off" className="mx-auto p-5 m-5 border border-primary" 
             style={{ width: '30rem' }}>
             <Input
                     id="category"
@@ -140,8 +152,6 @@ const PostRequirement = () => {
                 
                 <Button variant="primary" type="submit">Submit</Button>
             </Form>
-
-
         </div>
     );
 

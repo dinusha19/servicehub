@@ -27,7 +27,7 @@ const GetPostRequirements = () => {
     }, []);
 
     return(
-        <h1>Dinusha</h1>
+        <h1>Post requirenment details</h1>
     );
 
      
