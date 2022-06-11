@@ -64,7 +64,7 @@ const PostRequirement = () => {
         email: input.email,
         phonenumber: input.phonenumber,
         category: input.category,
-        serviceConsumerId: 2,
+        serviceConsumerId: 1,
       };
 
       console.log(values);
