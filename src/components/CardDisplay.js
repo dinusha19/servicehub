@@ -6,7 +6,8 @@ const CardDisplay = () => {
         <CardGroup className="p-5">
         <Card border="primary" style={{ width: '18rem' }}>
         <Card.Body>
-          <Card.Title>Post/Search yor requirement</Card.Title>
+        <Card.Header>Post/Search yor requirement</Card.Header>
+        <br/>
           <Card.Text>
           Find the best matching service provider capable of fulfilling your requirement 
           </Card.Text>
@@ -15,7 +16,8 @@ const CardDisplay = () => {
       <br/>
       <Card border="primary" style={{ width: '18rem' }}>
         <Card.Body>
-          <Card.Title>Get a shortlist of service providers</Card.Title>
+        <Card.Header>Get a shortlist of service providers</Card.Header>
+        <br/>
           <Card.Text>
           Get multiple shortlisted service providers and choose your right provider
           </Card.Text>
@@ -24,7 +26,8 @@ const CardDisplay = () => {
       <br/>
       <Card border="primary" style={{ width: '18rem' }}>
         <Card.Body>
-          <Card.Title>Deal with the provider you like</Card.Title>
+        <Card.Header>Deal with the provider you like</Card.Header>
+        <br/>
           <Card.Text>
           Deal with your service provider using our chat option with trust
           </Card.Text>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Stack } from "react-bootstrap";
-import Navbaritem from "../Navbar";
-import Search from "../Search";
-import CardDisplay from "../CardDisplay";
-import Footer from "../Footer";
+import Navbaritem from "../components/Navbar";
+import Search from "../components/Search";
+import CardDisplay from "../components/CardDisplay";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
