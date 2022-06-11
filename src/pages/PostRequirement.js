@@ -44,7 +44,7 @@ const PostRequirement = () => {
     setErrors({
       ...temp,
     });
-    if (fieldValues == input) return Object.values(temp).every((x) => x == "");
+    if (fieldValues === input) return Object.values(temp).every((x) => x === "");
   };
 
   const handleInputChange = (e) => {
@@ -105,6 +105,8 @@ const PostRequirement = () => {
           </Stack>
         </Container>
       </Navbar>
+
+      <h2 className="m-5">Post your requirenment</h2>
 
       <Form
         onSubmit={handleSubmit}
